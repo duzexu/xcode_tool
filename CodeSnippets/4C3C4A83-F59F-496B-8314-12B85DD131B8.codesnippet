@@ -3,23 +3,39 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>noti</string>
+	<string>shareinstant</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#funcName#&gt;:(NSNotification*)notification {
-    
+	<string>static &lt;#ClassName#&gt; *shareInstance = nil;
++ (&lt;#ClassName#&gt;*)shareInstance
+{
+    if (shareInstance == nil) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&amp;onceToken, ^{
+            shareInstance = [[self alloc] init];
+        });
+    }
+    return shareInstance;
+}
+- (id)init
+{
+    self = [super init];
+    if (self) {
+       
+    }
+    return self;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBB93C20-EE5A-44F5-B35D-854A96E88F2D</string>
+	<string>4C3C4A83-F59F-496B-8314-12B85DD131B8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>通知回调</string>
+	<string>单例</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>notification call back method</string>
+	<string>Shared Instant</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

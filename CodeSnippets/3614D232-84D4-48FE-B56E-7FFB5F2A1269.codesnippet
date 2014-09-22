@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>noti</string>
+	<string>gcd</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#funcName#&gt;:(NSNotification*)notification {
-    
-}</string>
+	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        &lt;#Do something#&gt;
+        dispatch_async(dispatch_get_main_queue(), ^{
+             &lt;#Do something#&gt;
+             });
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBB93C20-EE5A-44F5-B35D-854A96E88F2D</string>
+	<string>3614D232-84D4-48FE-B56E-7FFB5F2A1269</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>通知回调</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>notification call back method</string>
+	<string>GCD</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

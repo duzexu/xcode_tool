@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>noti</string>
+	<string>header</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#funcName#&gt;:(NSNotification*)notification {
-    
-}</string>
+	<string>/*!
+ @class &lt;#Class#&gt;
+ @discussion  &lt;#Discussion#&gt;
+ @author DuZexu
+ @updated 2014-08-20
+ @copyright Copyright (c) 2014年 Yappam. All rights reserved.
+ */</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBB93C20-EE5A-44F5-B35D-854A96E88F2D</string>
+	<string>2F8C8EAF-4CF0-4FB0-8B49-5CB0A4B8B098</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>通知回调</string>
+	<string>文件头说明</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>notification call back method</string>
+	<string>Header</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

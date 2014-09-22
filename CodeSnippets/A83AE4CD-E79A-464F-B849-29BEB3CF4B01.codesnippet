@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sss</string>
+	<string>ps</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>@property (strong, nonatomic) &lt;#type#&gt; *&lt;#name#&gt;;</string>
@@ -14,10 +14,8 @@
 	<string>A83AE4CD-E79A-464F-B849-29BEB3CF4B01</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>strong type property</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tq strong type property</string>
+	<string>Property Strong</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

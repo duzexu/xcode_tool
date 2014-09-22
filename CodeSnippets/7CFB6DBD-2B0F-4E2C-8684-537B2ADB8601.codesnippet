@@ -3,23 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>noti</string>
+	<string>na</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#funcName#&gt;:(NSNotification*)notification {
-    
-}</string>
+	<string>[[NSNotificationCenter defaultCenter] addObserver:self selector:&lt;#Selector#&gt; name:&lt;#Name#&gt; object:&lt;#Object#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBB93C20-EE5A-44F5-B35D-854A96E88F2D</string>
+	<string>7CFB6DBD-2B0F-4E2C-8684-537B2ADB8601</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>通知回调</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>notification call back method</string>
+	<string>Notification Add</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
