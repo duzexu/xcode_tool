@@ -3,22 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>acb</string>
+	<string>format</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>void (^&lt;#Title#&gt;)(BOOL) = ^(BOOL finished) { };</string>
+	<string>[NSString stringWithFormat: @"&lt;#string#&gt;", &lt;#param1#&gt;]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>16C4E807-6B02-46FE-9695-649F55D61682</string>
+	<string>0B7E4464-80FC-469E-8B8D-4C46A33C4491</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>格式化字符串</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Animation Completion Block</string>
+	<string>Formatted String</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

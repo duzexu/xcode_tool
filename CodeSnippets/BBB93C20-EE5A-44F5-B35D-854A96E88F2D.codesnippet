@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>noti</string>
+	<string>noti_callback</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#funcName#&gt;:(NSNotification*)notification {
+	<string>- (void)&lt;#funcName#&gt;:(NSNotification *)notification {
     
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -19,7 +19,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>通知回调</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>notification call back method</string>
+	<string>Notification Callback</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

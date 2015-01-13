@@ -14,6 +14,8 @@
 	<string>7CFB6DBD-2B0F-4E2C-8684-537B2ADB8601</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>添加通知事件</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Notification Add</string>
 	<key>IDECodeSnippetUserSnippet</key>

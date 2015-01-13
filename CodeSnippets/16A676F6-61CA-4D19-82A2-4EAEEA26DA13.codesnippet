@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pi</string>
+	<string>weak_self</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#Title#&gt; ()
-    
-@end</string>
+	<string>__weak typeof(self) blockSelf = self;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8250448C-2236-48B7-AEA0-69BAB50C492A</string>
+	<string>16A676F6-61CA-4D19-82A2-4EAEEA26DA13</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>block 弱指针</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Private Interface</string>
+	<string>Weak Self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

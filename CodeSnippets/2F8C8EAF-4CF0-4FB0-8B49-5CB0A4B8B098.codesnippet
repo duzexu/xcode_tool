@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>header</string>
+	<string>ad_header</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/*!
@@ -20,8 +20,6 @@
 	<string>2F8C8EAF-4CF0-4FB0-8B49-5CB0A4B8B098</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>文件头说明</string>
 	<key>IDECodeSnippetTitle</key>

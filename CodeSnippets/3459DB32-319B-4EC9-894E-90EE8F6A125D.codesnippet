@@ -3,24 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>np</string>
+	<string>ad_childController</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[NSNotificationCenter defaultCenter] postNotificationName:&lt;#name#&gt; object:nil];</string>
+	<string>UIViewController *newController = &lt;#newController#&gt;;
+[newController willMoveToParentViewController:self];
+[self addChildViewController:newController];
+[self.contentView addSubview:newController.view];
+[newController didMoveToParentViewController:self];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6A1864B7-3A36-49E0-9A20-C746E17439D8</string>
+	<string>3459DB32-319B-4EC9-894E-90EE8F6A125D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>触发通知事件</string>
+	<string>添加子视图</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Notification Post</string>
+	<string>Add ChildViewController</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

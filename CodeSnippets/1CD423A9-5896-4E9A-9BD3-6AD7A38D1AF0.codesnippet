@@ -3,24 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>np</string>
+	<string>uialertview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[NSNotificationCenter defaultCenter] postNotificationName:&lt;#name#&gt; object:nil];</string>
+	<string>[[[UIAlertView alloc] initWithTitle:&lt;#title#&gt;
+                                message:&lt;#message#&gt;
+                               delegate:&lt;#self#&gt;
+                      cancelButtonTitle:&lt;#nil#&gt;
+                      otherButtonTitles:&lt;#nil#&gt;] show];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6A1864B7-3A36-49E0-9A20-C746E17439D8</string>
+	<string>1CD423A9-5896-4E9A-9BD3-6AD7A38D1AF0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>触发通知事件</string>
+	<string>快速提示</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Notification Post</string>
+	<string>Fast AlertView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

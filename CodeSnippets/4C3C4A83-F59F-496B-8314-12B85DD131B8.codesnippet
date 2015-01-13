@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>static &lt;#ClassName#&gt; *shareInstance = nil;
-+ (&lt;#ClassName#&gt;*)shareInstance
++ (&lt;#ClassName#&gt; *)shareInstance
 {
     if (shareInstance == nil) {
         static dispatch_once_t onceToken;
@@ -20,6 +20,7 @@
     }
     return shareInstance;
 }
+
 - (id)init
 {
     self = [super init];

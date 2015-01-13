@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ttt</string>
+	<string>ad_tableview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -12,28 +12,24 @@
 	<string>#pragma mark - UITableView Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return &lt;#sections#&gt;;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return &lt;#rows#&gt;;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    
-    if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    static NSString* identifier = @"&lt;#identifier#&gt;";
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (cell == nil) {
+        cell = [[&lt;#UITableViewCell#&gt; alloc] initWithStyle:&lt;#UITableViewCellStyleSubtitle#&gt; reuseIdentifier:identifier];
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
     
     return cell;
 }
 
-#pragma mark - UITableView Delegate methods
+#pragma mark - UITableView Delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
