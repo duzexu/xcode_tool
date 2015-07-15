@@ -3,30 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ad_header</string>
+	<string>ms</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/*!
- @class &lt;#Class#&gt;
- @discussion  &lt;#Discussion#&gt;
- @author DuZexu
- @updated 2014-08-20
- @copyright Copyright (c) 2014年 Yappam. All rights reserved.
- */</string>
+	<string>#pragma mark - View Lifecycle
+
+#pragma mark - Delegate
+
+#pragma mark - IBActions
+
+#pragma mark - Public
+
+#pragma mark - Private
+
+#pragma mark - Getter &amp; Setter</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2F8C8EAF-4CF0-4FB0-8B49-5CB0A4B8B098</string>
+	<string>3F961770-2B3A-4402-8D95-0E684880E60B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>文件头说明</string>
+	<string>代码结构分割</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Header</string>
+	<string>Mark Struct</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
