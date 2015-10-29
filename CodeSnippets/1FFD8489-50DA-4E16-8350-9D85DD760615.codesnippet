@@ -3,31 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ms</string>
+	<string>ss</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - View Lifecycle
-
-#pragma mark - Delegate
-
-#pragma mark - IBActions
-
-#pragma mark - Public
-
-#pragma mark - Private
-
-#pragma mark - Getter &amp; Setter</string>
+	<string>__strong __typeof(weakSelf) strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3F961770-2B3A-4402-8D95-0E684880E60B</string>
+	<string>1FFD8489-50DA-4E16-8350-9D85DD760615</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>代码结构分割</string>
+	<string>block 强指针</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Mark Struct</string>
+	<string>Strong Self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

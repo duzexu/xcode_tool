@@ -2,32 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ms</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - View Lifecycle
-
-#pragma mark - Delegate
-
-#pragma mark - IBActions
-
-#pragma mark - Public
-
-#pragma mark - Private
-
-#pragma mark - Getter &amp; Setter</string>
+	<string>__strong __typeof(weakSelf) strongSelf = weakSelf;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3F961770-2B3A-4402-8D95-0E684880E60B</string>
+	<string>CD95659A-6FFC-4FEA-82F0-682C09C3F049</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>代码结构分割</string>
+	<string>block 强指针</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Mark Struct</string>
+	<string>Strong Self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
