@@ -1,0 +1,30 @@
+#appledoc Xcode script
+# Start constants
+company="duzexu";
+companyID="com.duzexu.www";
+#companyURL="http://ibireme.com";
+target="iphoneos";
+outputPath="${PROJECT_DIR}/Docset";
+# End constants
+/usr/local/bin/appledoc \
+--project-name "${PROJECT_NAME}" \
+--project-company "${company}" \
+--company-id "${companyID}" \
+--docset-atom-filename "${company}.atom" \
+--docset-feed-url "${companyURL}/${company}/%DOCSETATOMFILENAME" \
+--docset-package-url "${companyURL}/${company}/%DOCSETPACKAGEFILENAME" \
+--docset-fallback-url "${companyURL}/${company}" \
+--output "${outputPath}" \
+--publish-docset \
+--docset-platform-family "${target}" \
+--logformat xcode \
+--keep-intermediate-files \
+--ignore .m \
+--ignore "${PROJECT_DIR}/Pods" \
+--no-repeat-first-par \
+--no-warn-invalid-crossref \
+--no-create-docset \
+--exit-threshold 2 \
+"${PROJECT_DIR}"
+
+echo Finished
