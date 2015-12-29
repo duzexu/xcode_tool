@@ -3,25 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ad_childController</string>
+	<string>oc-kvo</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIViewController *newController = &lt;#newController#&gt;;
-[newController willMoveToParentViewController:self];
-[self addChildViewController:newController];
-[self.contentView addSubview:newController.view];
-[newController didMoveToParentViewController:self];</string>
+	<string>- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+	if ([object isKindOfClass:&lt;#class#&gt;.class] &amp;&amp; [keyPath isEqualToString:&lt;#keypath#&gt;]) {
+		&lt;#code to be executed upon observing keypath#&gt;
+	} else {
+		[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+	}
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3459DB32-319B-4EC9-894E-90EE8F6A125D</string>
+	<string>8F432D35-9F0E-45BE-8574-E528C5E646F5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>添加子视图</string>
+	<string>Key-value observing</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Add ChildViewController</string>
+	<string>Objective-C Key-value observing</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

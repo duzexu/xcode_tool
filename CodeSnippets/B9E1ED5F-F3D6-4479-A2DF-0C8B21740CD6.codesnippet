@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ad_tableview</string>
+	<string>oc-tableview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -11,20 +11,16 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - UITableView Datasource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return &lt;#sections#&gt;;
+- (NSInteger)tableView:(UITableView *)tableView
+numberOfRowsInSection:(NSInteger)section {
+    return &lt;#number#&gt;;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return &lt;#rows#&gt;;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString* identifier = @"&lt;#identifier#&gt;";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (cell == nil) {
-        cell = [[&lt;#UITableViewCell#&gt; alloc] initWithStyle:&lt;#UITableViewCellStyleSubtitle#&gt; reuseIdentifier:identifier];
-    }
+- (UITableViewCell *)tableView:(UITableView *)tableView
+cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:&lt;#reuseIdentifier#&gt; forIndexPath:&lt;#indexPath#&gt;];
+    
+    [self configureCell:cell forRowAtIndexPath:indexPath];
     
     return cell;
 }
@@ -41,7 +37,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>UITableView代理</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>UITableView  Delegate&amp;Datasource</string>
+	<string>UITableView  Delegate&amp;DataSource</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

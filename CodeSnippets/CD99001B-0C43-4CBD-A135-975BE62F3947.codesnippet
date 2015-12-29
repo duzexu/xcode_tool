@@ -2,23 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-na</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong __typeof(weakSelf) strongSelf = weakSelf;</string>
+	<string>NSNotificationCenter.defaultCenter().addObserver(self, selector: "&lt;#Selector#&gt;", name: &lt;#T##String?#&gt;, object: &lt;#T##AnyObject?#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CD95659A-6FFC-4FEA-82F0-682C09C3F049</string>
+	<string>CD99001B-0C43-4CBD-A135-975BE62F3947</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>block 强指针</string>
+	<string>添加通知事件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Strong Self</string>
+	<string>Swift Add Notification</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

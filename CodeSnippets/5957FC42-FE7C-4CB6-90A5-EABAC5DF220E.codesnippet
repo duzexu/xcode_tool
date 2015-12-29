@@ -3,21 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>oc-strong</string>
+	<string>swift-gcd</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong __typeof(&lt;#weakSelf#&gt;)strongSelf = &lt;#weakSelf#&gt;;</string>
+	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -&gt; Void in
+			&lt;#code#&gt;
+			dispatch_async(dispatch_get_main_queue(), { () -&gt; Void in
+				&lt;#code#&gt;
+			})
+		})</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1FFD8489-50DA-4E16-8350-9D85DD760615</string>
+	<string>5957FC42-FE7C-4CB6-90A5-EABAC5DF220E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Declare strong reference to weak reference</string>
+	<string>GCD dispatch_async snippet for Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C __strong self</string>
+	<string>Swift dispatch_async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

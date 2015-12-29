@@ -3,25 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>uialertview</string>
+	<string>swift-dispatchafter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[[UIAlertView alloc] initWithTitle:&lt;#title#&gt;
-                                message:&lt;#message#&gt;
-                               delegate:&lt;#self#&gt;
-                      cancelButtonTitle:&lt;#nil#&gt;
-                      otherButtonTitles:&lt;#nil#&gt;] show];</string>
+	<string>dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -&gt; Void in
+			
+		}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1CD423A9-5896-4E9A-9BD3-6AD7A38D1AF0</string>
+	<string>BA018876-52F1-4E5A-B635-274514EC09A7</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速提示</string>
+	<string>GCD dispatch_after snippet for Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Fast AlertView</string>
+	<string>Swift dispatch_after</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

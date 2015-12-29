@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>oc-strong</string>
+	<string>swift-closureoptionaltypealias</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong __typeof(&lt;#weakSelf#&gt;)strongSelf = &lt;#weakSelf#&gt;;</string>
+	<string>typealias &lt;#ClosureName#&gt; = ((&lt;#arguments#&gt;) -&gt; &lt;#return value#&gt;)?</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1FFD8489-50DA-4E16-8350-9D85DD760615</string>
+	<string>55E6D3EC-F363-4A5E-9AF8-7CAB0CDFFC25</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Declare strong reference to weak reference</string>
+	<string>Optional closure typealiast with arguments and return value snippet for Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C __strong self</string>
+	<string>Swift optional closure typealias</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

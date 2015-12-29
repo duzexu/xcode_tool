@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>oc-strong</string>
+	<string>swift-nr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong __typeof(&lt;#weakSelf#&gt;)strongSelf = &lt;#weakSelf#&gt;;</string>
+	<string>NSNotificationCenter.defaultCenter().removeObserver(self, name: &lt;#T##String?#&gt;, object: &lt;#T##AnyObject?#&gt;)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1FFD8489-50DA-4E16-8350-9D85DD760615</string>
+	<string>AC133242-6247-4128-9808-6FCEDE669374</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Declare strong reference to weak reference</string>
+	<string>移除通知事件</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C __strong self</string>
+	<string>Swift Remove Notification</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

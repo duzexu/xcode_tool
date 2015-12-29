@@ -3,24 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>uiimageview</string>
+	<string>swift-noticallback</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"&lt;#imageName#&gt;"]]</string>
+	<string>func &lt;#funcName#&gt;(notification:NSNotification) {
+		
+	}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>721B387D-FC5C-4849-8C16-6B2B5D486DC9</string>
+	<string>162AC5CB-8D13-4CA6-A001-5D0A7446BA44</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速生成Imageview</string>
+	<string>通知回调</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Fast ImageView</string>
+	<string>Swift Notification CallBack</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
