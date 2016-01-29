@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>oc-pa</string>
+	<string>swift-forin</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, assign) &lt;#type#&gt; &lt;#name#&gt;</string>
+	<string>for case let &lt;#object#&gt; in &lt;#collection#&gt; as &lt;#Type#&gt; {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B78A012E-E94B-446C-AD38-B7BA8B344A10</string>
+	<string>48C9EB7D-A166-4781-8DC8-6961B57BDC02</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>for-in loop that casts objects inline</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C Property Assign</string>
+	<string>Swift for-in loop with casting</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
