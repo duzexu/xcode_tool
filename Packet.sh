@@ -40,17 +40,17 @@ if [ -z "$version" ] ;then
 fi
 
 #存放打包出来的版本的文件夹
-podsDir="/Users/ADU/Desktop/c/pods"
+podsDir="/Users/duzexu/Desktop/SDK/pods"
 #存放archive文件
-archivesDir="/Users/ADU/Desktop/c/archives"
+archivesDir="/Users/duzexu/Desktop/SDK/archives"
 #存放打包出来ipa的文件夹
-ipasDir="/Users/ADU/Desktop/c/ipas"
+ipasDir="/Users/duzexu/Desktop/SDK/ipas"
 #pod库地址
-podDir="/Users/ADU/Desktop/QHLoginFramework"
+podDir="/Users/duzexu/Desktop/360iOSLoginSDK/SDK-NEW/QHLoginFramework"
 #pod打包地址
 podVersionDir="$podDir/QHLoginFramework-$version"
 #工程地址
-projectDir="/Users/ADU/Desktop/360iOSLoginSDK_v0.3.0_release"
+projectDir="/Users/duzexu/Desktop/360iOSLoginSDK_v0.3.0_release"
 
 #创建文件夹
 if [ ! -d $podsDir ]; then
@@ -67,12 +67,13 @@ fi
 
 #提交git
 cd $podDir
+rm -rf $podVersionDir
 git add .
-git commit -m 'v$version'
+git commit -m v${version}
 
 #打tag
 if test $? = 0; then
-file="/Users/ADU/Desktop/QHLoginFramework/log.txt"
+file="/Users/duzexu/Desktop/SDK/log.txt"
 git tag > $file
 for tag in `cat $file`
 do
@@ -87,8 +88,9 @@ else
 fi
 
 #pod 打包
-#cd /Users/ADU/Desktop/c/a
-#rm -rf  *
+cd /Users/duzexu/Library/Caches/CocoaPods/Pods/External/QHLoginFramework
+rm -rf  *
+cd $podDir
 pod package QHLoginFramework.podspec --embedded --force --configuration=$build_config
 if test $? = 1; then
     LogError "pod 打包失败"
@@ -123,7 +125,9 @@ if test $? = 1; then
 exit
 fi
 
-xcodebuild -exportArchive -exportFormat IPA -archivePath $archivePath -exportPath $ipaPath
+cd /Users/duzexu/Desktop/SDK
+xcodebuild -exportArchive -archivePath $archivePath -exportPath $ipaPath -exportOptionsPlist ./ArchiveOption.plist
+
 if test $? = 1; then
     LogError "生成ipa错误"
 exit
