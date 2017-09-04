@@ -70,23 +70,23 @@ def resize_image(img_path,count,length):
             path = '%s%d.png' % (img_path,i)
             pvr = '%s%d.pvr' % (img_path,i)
             i += 1
-            # if os.path.exists(path):
-            #     newImg = Image.new('RGBA', (length,length),(0,0,0,0))
-            #     img = Image.open(path).convert('RGBA')
-            #     (width,height) = img.size
-            #     if width > height:
-            #         rate = float(length)/float(width)
-            #         newSize = (length,int(height*rate))
-            #     else:
-            #         rate = float(length)/float(height)
-            #         newSize = (int(width*rate),length)
-            #
-            #     img = img.resize(newSize,Image.ANTIALIAS)
-            #     newImg.paste(img)
-            #     newImg.save(path,'PNG')
-            #     command = 'xcrun -sdk iphoneos texturetool -e PVRTC --bits-per-pixel-4 -o %s -f PVR %s' % (pvr,path)
-            #     os.system(command)
-            #     os.remove(path)
+            if os.path.exists(path):
+                newImg = Image.new('RGBA', (length,length),(0,0,0,0))
+                img = Image.open(path).convert('RGBA')
+                (width,height) = img.size
+                if width > height:
+                    rate = float(length)/float(width)
+                    newSize = (length,int(height*rate))
+                else:
+                    rate = float(length)/float(height)
+                    newSize = (int(width*rate),length)
+
+                img = img.resize(newSize,Image.ANTIALIAS)
+                newImg.paste(img)
+                newImg.save(path,'PNG')
+                command = 'xcrun -sdk iphoneos texturetool -e PVRTC --bits-per-pixel-4 -o %s -f PVR %s' % (pvr,path)
+                os.system(command)
+                os.remove(path)
     except Exception,e:
         print e
 
@@ -132,8 +132,25 @@ if __name__ == '__main__':
                 else:
                     length = pow(2,i)
                 resize_image(partPath, int(count), length)
+                old_asize_w = texture['asize_offset_x']
+                old_asize_h = texture['asize_offset_y']
                 texture['asize_offset_x'] = length
                 texture['asize_offset_y'] = length
+                old_offset_x = texture['anchor_offset_x']
+                old_offset_y = texture['anchor_offset_y']
+                old_scale_ratio = texture['scale_ratio']
+                scale_type = texture['scale_Type']
+                scale = 0.0
+                if old_asize_w > old_asize_h:
+                    scale = length/float(old_asize_w)
+                else:
+                    scale = length/float(old_asize_h)
+                texture['anchor_offset_x'] = int(old_offset_x*scale)
+                texture['anchor_offset_y'] = int(old_offset_y*scale)
+                if scale_type == 0:
+                    texture['scale_ratio'] = int(old_scale_ratio*scale)
+                else:
+                    texture['scale_ratio'] = float(old_scale_ratio*1/scale)
             print '[Info]完成'
             with open(os.path.join(path,'config'), 'w') as f:
                 f.write(json.dumps(config))
