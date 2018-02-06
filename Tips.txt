@@ -1,0 +1,68 @@
+批量删除svn文件
+find . -type d -name ".svn"|xargs rm -rf
+移除git文件
+find . -name .git | xargs rm -fr
+整理工程文件夹
+synx path/to/my/project.xcodeproj 
+文档生成
+jazzy 
+描述文件地址
+~/Library/MobileDevice/Provisioning Profiles
+构建项目
+~/ipa-build . -n -p IOS
+~/cocoapods-build .
+上传项目到fir.im
+~/ipa-publish-fir -d . -e -m changelog
+使用FIR.im CLI 
+安装sudo gem install fir-cli --no-ri --no-rdoc
+project项目 fir build_ipa . -p -T 8243cf81dd0311e4883065ae99cbda824d5a829a
+workspace项目 fir b . -w -s test 
+fir p ./build_ipa/*.ipa -T 8243cf81dd0311e4883065ae99cbda824d5a829a
+修复插件失效
+find ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -name Info.plist -maxdepth 3 | xargs -I{} defaults write {} DVTPlugInCompatibilityUUIDs -array-add `defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID`
+xcode下载
+http://adcdownload.apple.com/Developer_Tools/Xcode_7.1/Xcode_7.1.dmg
+开启本地服务器
+python -m SimpleHTTPServer
+添加LLDB命令
+touch ~/.lldbinit echo display @import UIKit >> ~/.lldbinit echo target stop-hook add -o \"target stop-hook disable\" >> ~/.lldbinit
+命令行调试工具Chisel安装
+sudo brew update  
+brew install chisel 
+echo  command script import /usr/local/opt/chisel/libexec/fblldb.py >> ~/.lldbinit
+
+安装cocoapods
+sudo gem install -n /usr/local/bin cocoapods
+
+打包cocospod库
+pod package QHLoginFramework.podspec --embedded --force
+
+/Users/duzexu/Library/Caches/CocoaPods/Pods/External/QHLoginFramework
+
+Xcode8里边 Edit Scheme... -> Run -> Arguments, 在Environment Variables里边添加 OS_ACTIVITY_MODE ＝ disable
+
+关闭未签名App在mac上安装 sudo spctl —-master-disable
+
+xcode8后安装插件
+sudo gem install update_xcode_plugins
+
+命令行安装ipa
+sudo brew update
+sudo brew install libimobiledevice
+#libimobiledevice中并不包含ipa的安装命令，所以还需要安装
+sudo brew install ideviceinstaller
+ideviceinstaller -i 后边添加ipa 文件路径
+
+切换xcode路径
+sudo xcode-select --switch /Applications/Xcode.app
+
+查看引用库
+otool -L Payload/AppName.app/AppName
+
+查找方法
+grep -r xxx .
+
+打开Mac任何来源选项
+sudo spctl --master-disable
+
+安装python失败，重启按住command+R，终端输入csrutil disable，重启
