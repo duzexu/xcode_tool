@@ -66,3 +66,11 @@ grep -r xxx .
 sudo spctl --master-disable
 
 安装python失败，重启按住command+R，终端输入csrutil disable，重启
+
+私有Pod
+验证
+pod lib lint ADKit.podspec --verbose
+提交
+pod repo push adu ADKit.podspec --allow-warnings
+含有私有denpency
+pod lib lint 项目名.podspec --sources=https://github.com/CocoaPods/Specs.git,192.168.0.100:Plutoy/Specs.git以及pod repo push --source=https://github.com/CocoaPods/Specs.git,192.168.0.100:Plutoy/Specs.git
